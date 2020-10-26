@@ -316,6 +316,7 @@ func NewApp(client *Client) *cli.App {
 						},
 						{
 							Name:   "list",
+							Flags:  flags("password, p"),
 							Usage:  format(`List available OCR key bundles`),
 							Action: client.ListOCRKeyBundles,
 						},
